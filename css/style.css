@@ -1,0 +1,850 @@
+/*
+@font-face {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Cuprum"),
+       url("fonts/cuprum.woff2") format("woff2"),
+       url("fonts/cuprum.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CuprumBold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("CuprumBold"),
+       url("../fonts/cuprumbold.woff2") format("woff2"),
+       url("../fonts/cuprumbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CuprumBoldItalic";
+  font-weight: 700;
+  font-style: italic;
+  src: local("CuprumBoldItalic"),
+       url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+       url("../fonts/cuprumbolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CuprumItalic";
+  font-weight: 700;
+  font-style: italic;
+  src: local("CuprumItalic"),
+       url("../fonts/cuprumitalic.woff2") format("woff2"),
+       url("../fonts/cuprumitalic.woff") format("woff");
+}
+@font-face {
+  font-family: "PTSans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("PTSans"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PTSansBold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("PTSansBold"),
+       url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+}
+*/
+:root {
+  --basic-top: #293449;
+  --basic-navy: #32425C;
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-footer: #293449;
+  --basic-white: #ffffff;
+  --basic-background:#F1F5F7;
+  --basic-grey:#C5C5C5;
+  --basic-header:#F9F5F0;
+
+
+  --special-yellow: #FFBF47;
+  --special-blue:#3BBCE3;
+  --special-lilac:#DC91D8;
+  --special-greenlite:#8ED78F;
+  --special-yellowlight:#FFD180;
+  --special-success:#5FBB2D;
+  --special-warning:#FFBF47;
+  --special-error:#BA2732;
+  --special-click:#1D2739;
+  --special-border: #EAEAEA;
+}
+
+
+body {
+  font-family: "Cuprum", "PTSans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.page-body {
+  background-color: var(--basic-white);
+
+  width: 100%;
+  min-height: fit-content;
+  margin: 0 auto;
+
+}
+
+h1 {
+  font-family: "Cuprum", "PTSans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+
+}
+
+h2 {
+  font-family: "Cuprum", "PTSans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-white);
+
+}
+
+h3 {
+  font-family: "Cuprum", "PTSans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-navy);
+
+}
+
+.button {
+  font-family: "Cuprum", "PTSans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--basic-red);
+  padding-top: 11px;
+  padding-bottom: 9px;
+  border-style: none;
+  color: var(--basic-white);
+}
+
+.main-header {
+  background: var(--basic-background) url("../img/bg-top.jpg") repeat-x;
+  width: 1200px;
+
+}
+
+.main-header-logo {
+  position: absolute;
+  display: inline-block;
+  left: 130px;
+  width: 220px;
+  height: 47px;
+  background: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  top: 0px;
+
+}
+
+.main-header-logo img {
+  padding-top: 12px;
+
+
+}
+
+.search-form {
+  background: var(--basic-top);
+  color: var(--basic-white);
+  height: 42px;
+  /*box-shadow: inset 0px -5px 0px rgb(255, 255, 255);*/
+  width: 350px;
+}
+
+.search-form input {
+  background: var(--basic-top);
+  width: 185px;
+  border: none;
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+
+}
+.search-form input:focus {
+  border: solid 1px var(--basic-white);
+}
+.search-form label {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+
+}
+.search-form img {
+  filter: alpha(Opacity=50);
+  opacity: 0.5;
+  padding-top: 2px;
+  margin-right: 4px;
+}
+.button-bookmark {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-bookmark img {
+  filter: alpha(Opacity=50);
+  opacity: 0.5;
+  padding-top: 2px;
+  margin-right: 4px;
+}
+
+.button-cart {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-cart img {
+  filter: alpha(Opacity=50);
+  opacity: 0.5;
+  padding-top: 2px;
+  margin-right: 4px;
+}
+
+.button-order {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-order img {
+  filter: alpha(Opacity=50);
+  opacity: 0.5;
+  padding-top: 2px;
+  margin-right: 4px;
+}
+
+.site-navigation-top {
+width: 400px;
+overflow-wrap: none;
+}
+
+.telephone {
+  position: absolute;
+  width: 270px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-red);
+
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.adress-top {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-navy);
+  margin-top: 24px;;
+}
+
+.button-login {
+  position: absolute;
+  display: block;
+  width: 121px;
+  height: 45px;
+  font-family: "Cuprum", "PTSans", sans-serif;
+
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+
+
+  margin-left: 20px;
+
+
+  background: var(--basic-white) url("../img/icon-login-grey.png") 20px 13px no-repeat;
+  color: black;
+
+}
+
+.button-login:hover {
+  background: var(--basic-white) url("../img/icon-login.png") 20px 13px no-repeat;
+  color: var(--basic-red);
+
+}
+.button-login:active {
+  background: var(--basic-white) url("../img/icon-login-grey.png") 20px 13px no-repeat;
+  color: var(--basic-grey);
+
+}
+
+.button-login div {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 45px;
+  padding-left: 45px;
+  padding-top: 12px;
+
+}
+
+.button-autorisation {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 45px;
+  font-family: "Cuprum", "PTSans", sans-serif;
+
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  margin-left: 220px;
+
+
+
+  background: var(--basic-white);
+
+
+  color: black;
+
+}
+
+.button-autorisation:hover {
+  background: var(--basic-white);
+  color: var(--basic-red);
+
+}
+.button-autorisation:active {
+  background: var(--basic-white);
+  color: var(--basic-grey);
+
+}
+
+.button-autorisation div {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 45px;
+  padding-left: 25px;
+  padding-top: 12px;
+
+}
+.main-navigation {
+  width: 940px;
+  height: 60px;
+  background: var(--basic-navy);
+  box-shadow: inset 0px -5px 0px #293449;
+  text-align: center;
+
+}
+.main-navigation .menu-item, .main-navigation .menu-item-active {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  margin: 0;
+
+  padding: 16px;
+  float: left;
+
+}
+.main-navigation .menu-item:hover {
+  background-color: var(--basic-footer);
+  color: var(--basic-white);
+}
+.main-navigation .menu-item:active {
+  background-color: var(--special-click);
+  color: var(--basic-white);
+  opacity: 50%;
+}
+
+/*Блок MAIN*/
+
+ .features {
+   width: 940px;
+   height: 409px;
+   margin: 0px;
+
+   padding: 0px;
+
+ }
+.feature-item {
+  width: 300px;
+  height: 123px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+.feature-item h2 {
+  padding-left: 23px;
+  padding-top: 20px;
+}
+.materials {
+  background: url("../img/icon-new.png") 100% 0 no-repeat, url("../img/icon-1.png") 80% 50% no-repeat;
+  background-color: var(--special-yellow);
+}
+.tools {
+  background: url("../img/icon-2.png") 80% 50% no-repeat;
+  background-color: var(--special-blue);
+}
+.technics {
+  background: url("../img/icon-3.png") 80% 50% no-repeat;
+  background-color: var(--special-blue);
+}
+.action {
+  background: url("../img/icon-4.png") 80% 50% no-repeat;
+  background-color: var(--special-greenlite);
+}
+.delivery {
+  background: url("../img/icon-5.png") 80% 50% no-repeat;
+  background-color: var(--special-yellow);
+}
+.button-featured {
+  width: 135px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 10px;
+  margin-left: 23px;
+  margin-top: 64px;
+  font-family: "Cuprum", "PTSans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+
+}
+.slider {
+  position: relative;
+  display: block;
+  width: 620px;
+  height: 266px;
+  background: url("../img/Layer 99.jpg") no-repeat;
+  z-index: -100;
+
+
+}
+.slider p {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  font-weight: 400;
+}
+.large {
+  position: relative;
+  display: block;
+  font-family: "Cuprum", "PTSans", sans-serif;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+
+}
+.top-products, .top-manufacturers {
+  position: relative;
+  display: block;
+  width: 940px;
+  height: 427px;
+
+}
+
+.top-products h3, .top-manufacturers h3 {
+  position: relative;
+  display: inline;
+  width: 940px;
+  height: 89px;
+  background-color: var(--basic-header);
+  float: left;
+  vertical-align: top;
+  padding-top: 29px;
+  padding-left: 28px;
+
+
+}
+
+.top-products .button, .top-manufacturers .button {
+  position: relative;
+  display: inline;
+  width: 192px;
+  float: left;
+
+}
+
+.top-product-list {
+  position: relative;
+  display: inline;
+  width: 940px;
+  height: 318px;
+
+}
+.top-product-list .product-item, .product-item a {
+  position: relative;
+  display: block;
+  width: 218px;
+  height: 318px;
+  border: solid 1px var(--special-border);
+  background-color: var(--basic-white);
+  text-align: center;
+  margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: black;
+  margin: 20px;
+
+
+}
+.product-item span {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  color: #a9a9a9;
+}
+
+.button-to-cart {
+  position: relative;
+  display: block;
+  width: 141px;
+  height: 38px;
+  background-color: var(--basic-red);
+
+  border-radius: 4px;
+  border-style: none;
+  background-image: url("../img/corners.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  color: var(--basic-white);
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
+}
+
+.manufacturers-list {
+  position: relative;
+  display: inline;
+  width: 940px;
+  height: 419px;
+
+}
+
+.manufacturers-list .manufacturer-item, .manufacturer-item a {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 145px;
+  border: solid 1px var(--special-border);
+  background-color: var(--basic-white);
+  text-align: center;
+  margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: black;
+  margin: 20px;
+
+}
+
+.services {
+  position: relative;
+  display: block;
+  width: 1200px;
+  height: 522px;
+  background-color: var(--basic-background);
+}
+
+.services h3 {
+  color: black;
+}
+
+.services p {
+  font-family: PT Sans;
+  width: 394px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: black;
+}
+
+.slider-services {
+  position: relative;
+  display: block;
+  width: 753px;
+  height: 333px;
+
+
+
+}
+.slider-services-slide {
+  width: 619px;
+  height: 283px;
+  position: relative;
+  display: block;
+  background:  var(--basic-background) url("../img/bg-services.png") 100% 50% no-repeat;
+}
+
+.slider-services a {
+  width: 240px;
+  height: 61px;
+  position: relative;
+  display: block;
+  font-family: "Cuprum", "PTSans", sans-serif;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-white);
+  background-color: var(--basic-navy);
+  padding-left: 22px;
+
+}
+.slider-services .a-active {
+  color: var(--basic-navy);
+  background-color: var(--basic-white);
+}
+
+.about-company {
+  width: 420px;
+  padding-left: 130px;
+}
+
+.about-company h3 {
+  color: black;
+}
+
+.about-company p {
+  color: black;
+  font-family: "Cuprum", "PTSans", sans-serif;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+
+}
+
+.transports-list {
+  width: 420px;
+}
+.transports-list .transport-item {
+  color: black;
+  font-family: "Cuprum", "PTSans", sans-serif;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  list-style-image: url("../img/red-tire.png");
+  vertical-align: middle;
+}
+.about-company .button {
+  position: relative;
+  display: block;
+  width: 220px;
+}
+
+.contacts {
+  width: 420px;
+  padding-left: 130px;
+}
+
+.contacts h3 {
+  color: black;
+}
+
+.contacts p {
+  color: black;
+  font-family: "Cuprum", "PTSans", sans-serif;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+
+}
+.contacts .button {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.modal-window {
+  width: 620px;
+  height: 430px;
+  position: relative;
+  display: block;
+  padding-top: 0px;
+  margin: 0 auto;
+  background: var(--basic-white);
+  padding-left: 80px;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  border-top: solid 7px var(--basic-red);
+  z-index: 1000;
+}
+
+.modal-window p {
+position: relative;
+display: inline-block;
+width: 230px;
+padding-right: 20px;
+
+
+}
+.modal-window .button-modal {
+  position: relative;
+  display: inline-block;
+  width: 460px;
+
+
+}
+.modal-window .button-close {
+  width: 21px;
+  height: 21px;
+  position: relative;
+  display: block;
+  background-image: url("../img/icon-close.png");
+  background-color: var(--basic-white);
+  border: none;
+  left: 100%;
+
+
+}
+.modal-window .modal-gray {
+  position: relative;
+  display: block;
+  width: 620px;
+  height: 112px;
+  background-color: var(--special-border);
+  margin-left: 0;
+}
+.modal-window h2 {
+  visibility: hidden;
+  font-size: 10px;
+}
+
+/*Футер*/
+
+.main-footer {
+  position: relative;
+  display: block;
+  background: var(--basic-footer) url("../img/bg-footer.jpg") repeat-x;
+  width: 1200px;
+  height: 300px;
+  padding-left: 130px;
+}
+
+.footer-address, .footer-address a {
+  font-family: "Cuprum", "PTSans", sans-serif;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.footer-navigation {
+  margin-left: 300px;
+  margin-top: -150px;
+  position: relative;
+  display: block;
+  width: 600px;
+}
+
+.footer-navigation .menu-item, .footer-navigation .menu-item-active {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  margin: 0;
+
+  padding: 16px;
+  float: left;
+
+}
+.footer-navigation .menu-item:hover {
+  background-color: var(--basic-footer);
+  color: var(--basic-white);
+}
+.footer-navigation .menu-item:active {
+  background-color: var(--special-click);
+  color: var(--basic-white);
+  opacity: 50%;
+}
+.double-navigation {
+  position: relative;
+  display: block;
+  margin-left: 300px;
+  margin-top: -100px;
+}
+.double-navigation .menu-item, .double-navigation .menu-item-active {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--special-yellowlight);
+  margin: 0;
+
+  padding: 16px;
+  float: left;
+
+}
+.double-navigation .menu-item:hover {
+  background-color: var(--basic-footer);
+  color: var(--basic-white);
+}
+.double-navigation .menu-item:active {
+  background-color: var(--special-click);
+  color: var(--basic-white);
+  opacity: 50%;
+}
+.copyright, .appendix-list, .appendix-list li {
+  font-family: "Cuprum", "PTSans", sans-serif;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+.social-buttons-list {
+  width: 200px;
+}
+.social-buttons-list .item {
+  float: left;
+}
+.appendix-list a.item{
+  color: var(--special-yellowlight);
+}
