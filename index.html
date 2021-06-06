@@ -17,6 +17,7 @@
 
   <header class="main-header">
     <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+    <div class="wrap-top-navigation">
     <a class="main-header-logo" title="Техномарт"><img src="img/logo-technomart.png" width="107" height="17" alt="Логотип Техномарта"></a>
     <form action="get" name="search" class="search-form"><img src="img/icon-search.png" width="17" height="17" alt="Изображение лупы"><label>Поиск: <input type="text" name="Поиск" id="input-search"></label></form>
     <ul class="site-navigation-top">
@@ -24,11 +25,14 @@
       <li class="button-cart"><a href="#"><img src="img/icon-cart.png" width="17" height="17" alt="Иконка корзины">Корзина: 0</a></li>
       <li class="button-order"><a href="#">Оформить заказ</a></li>
     </ul>
-    <div class="telephone"><a href="tel:+78005558628"><img src="img/icon-phone.png" width="19" height="19" alt="Изображение телефона">&nbsp;+7 800 555-86-28</a></div><br><p class="adress-top">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+    </div>
+
+    <div class="telephone"><a href="tel:+78005558628"><img src="img/icon-phone.png" width="19" height="19" alt="Изображение телефона">&nbsp;+7 800 555-86-28</a><br><p class="adress-top">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p></div>
     <ul class="autorisation">
       <li class="button-login"><a href="blank.html"><div>Войти</div></a></li>
       <li class="button-autorisation"><a href="blank.html"><div>Регистрация</div></a></li>
     </ul>
+
     <nav class="main-navigation">
       <ul class="menu-list">
         <li class="menu-item-active"><a href="#">Главная</a></li>
@@ -47,6 +51,7 @@
 
   <main class="container">
     <section class="features">
+
       <ul class="features-list">
         <li class="feature-item materials">
           <h2>Материалы</h2><a href="blank.html" class="button-featured">На любой вкус</a>
@@ -63,27 +68,29 @@
         <li class="feature-item delivery">
           <h2>Доставка</h2><a href="blank.html" class="button-featured">Бесплатно</a>
         </li>
-      </ul>
+        <li class="feature-item slider">
       <div id="slider" class="slider"><span class="large">Перфораторы</span><p>Настоящие мужские игрушки</p></div>
-
+      </li><!-- Вроде как слайдер нельзя помещать в список, т.к. он другого типа??? Но иначе его в грид-сетку не засунуть!-->>
+      </ul>
 
     </section>
+
     <section class="top-products">
       <h3>Популярные товары:</h3><a href="blank.html" class="button">Все популярные товары</a>
-      <ul class="top-products-list">
+      <ul class="top-list-products">
         <li class="product-item"><a href="#"><img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор">Перфоратор BOSCH-BFG
-            9000</a><span>32500 Р.</span><button class="button-to-cart">25500 Р.</button></li>
+            9000</a><br><span>32500 Р.</span><button class="button-to-cart">25500 Р.</button></li>
         <li class="product-item"><a href="#"><img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор">Перфоратор BOSCH-BFG
-            9000</a><span>32500 Р.</span><button class="button-to-cart">25500 Р.</button></li>
+            9000</a><br><span>32500 Р.</span><button class="button-to-cart">25500 Р.</button></li>
         <li class="product-item"><a href="#"><img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор">Перфоратор BOSCH-BFG
-            9000</a><span>32500 Р.</span><button class="button-to-cart">25500 Р.</button></li>
-        <li class="product-item"><a href="#"><img src="img/snippet-189s27.png" width="127" height="112" alt="Перфоратор">Перфоратор BOSCH-BFG
-            9000</a><span>32500 Р.</span><button class="button-to-cart">25500 Р.</button></li>
+            9000</a><br><span>32500 Р.</span><button class="button-to-cart">25500 Р.</button></li>
+        <li class="product-item"><a href="#"><img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор">Перфоратор BOSCH-BFG
+            9000</a><br><span>32500 Р.</span><button class="button-to-cart">25500 Р.</button></li>
       </ul>
 
     </section>
 
-    <section class="top-manufacturers" style="visibility: hidden;">
+    <section class="top-manufacturers">
       <h3>Популярные производители:</h3><a href="blank.html" class="button">Все производители</a>
       <ul class="manufacturers-list">
         <li class="manufacturer-item"><a href="#"><img src="img/logo-bosch.png" width="220" height="145" alt="Логотип Bosch"></a></li>
@@ -121,6 +128,7 @@
 
       </div>
     </section>
+    <div class="wrap-about-contacts">
     <section class="about-company">
       <h3>Компания "Техномарт"</h3>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -148,7 +156,9 @@
 
       <a href="blank.html" class="button">Заблудились? Напишите нам!</a>
     </section>
-    <section class="modal-window">
+    </div>
+
+    <section class="modal-window" style="display: none;">
       <h2>Форма обратной связи</h2>
 
       <form action="https://echo.htmlacademy.ru" method="post" class="form-feedback">
@@ -188,6 +198,7 @@
 
 
     </ul>
+
 
     <ul class="footer-navigation double-navigation">
 
