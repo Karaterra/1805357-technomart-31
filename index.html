@@ -19,10 +19,10 @@
 
     <div class="wrap-top-navigation">
       <a class="main-header-logo" title="Техномарт"><img src="img/logo-technomart.png" width="107" height="17" alt="Логотип Техномарта"></a>
-      <form action="get" name="search" class="search-form"><img src="img/icon-search.png" width="17" height="17" alt="Изображение лупы"><label>Поиск: <input type="text" name="Поиск" id="input-search"></label></form>
+      <form action="get" name="search" class="search-form"><img src="img/icon-search.png" width="17" height="17" alt="Изображение лупы"><label class="search-input">Поиск: <input type="text" name="Поиск" id="input-search"></label></form>
       <ul class="site-navigation-top">
-        <li class="button-bookmark"><a href="#"><img src="img/icon-bookmark.png" width="17" height="17" alt="Иконка закладок">Закладки: 0</a></li>
-        <li class="button-cart"><a href="#"><img src="img/icon-cart.png" width="17" height="17" alt="Иконка корзины">Корзина: 0</a></li>
+        <li class="button-bookmark"><div class="wrap-img-bookmark"><img src="img/icon-bookmark.png" width="17" height="17" alt="Иконка закладок"></div><a href="#">Закладки: 0</a></li>
+        <li class="button-cart"><div class="wrap-img-cart"><img src="img/icon-cart.png" width="17" height="17" alt="Иконка корзины"></div><a href="#">Корзина: 0</a></li>
         <li class="button-order"><a href="#">Оформить заказ</a></li>
       </ul>
     </div>
@@ -72,7 +72,7 @@
         </li>
         <li class="feature-item slider">
       <div id="slider" class="slider"><span class="large">Перфораторы</span><p>Настоящие мужские игрушки</p></div>
-      </li><!-- Вроде как слайдер нельзя помещать в список, т.к. он другого типа??? Но иначе его в грид-сетку не засунуть!-->>
+      </li><!-- Вроде как слайдер нельзя помещать в список, т.к. он другого типа??? Но иначе его в грид-сетку не засунуть!-->
       </ul>
 
     </section>
@@ -110,16 +110,18 @@
 
     </section>
     <section class="services">
+      <div class="wrap-services">
       <h3>Сервисы</h3>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!
+      <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
       <div id="slider-services" class="slider-services">
         <ul>
-          <li><a href="#" class="a-active">Доставка</a></li>
+          <li class="li-active"><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Кредит</a></li>
         </ul>
+        <img src="img/shadow-services.png" width="10" height="279" alt="Разделитель">
         <div class="slider-services-slide">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо
@@ -129,16 +131,16 @@
         </div>
 
 
-      </div>
+      </div></div>
     </section>
     <div class="wrap-about-contacts">
     <section class="about-company">
       <h3>Компания "Техномарт"</h3>
-      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>ремонта и строительства не оставит
         равнодушными любителей сэкономить
         на гастарбайтерах.</p>
 
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:</p>
       <ul class="transports-list">
         <li class="transport-item">Деловые линии</li>
@@ -151,7 +153,7 @@
 
     <section class="contacts">
       <h3>Контакты</h3>
-      <p>Вы можете забрать товар сами,
+      <p>Вы можете забрать товар сами,<br>
         заехав в наш офис:</p>
       <a href="#" class="map"><img src="img/map.png" width="300" height="158" alt="Карта проезда"></a>
 
@@ -185,6 +187,7 @@
 
 
   </main>
+
   <footer class="main-footer">
     <div class="wrap-main-footer">
 
@@ -222,6 +225,7 @@
     </ul>
     <ul class="appendix-list">
       <li class="item">Обратная связь: <br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+      <li class="item">&nbsp;</li>
       <li class="item">Разработано — <br><a href="https://htmlacademy.ru">htmlacademy.ru</a></li>
 
 
