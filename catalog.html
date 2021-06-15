@@ -58,10 +58,10 @@
   <main>
     <div class="container">
     <section class="breadcrumbs">
-      <h3 style="visibility: hidden; font-size: 12px;">Хлебные крошки</h3>
-      <a href="index.html"><img src="img/icon-home.png" width="14" height="12" alt="Главная страница"></a>
-      <ul class="breadcrumbs-list">
+      <h3 class="element-hidden">Хлебные крошки</h3>
 
+      <ul class="breadcrumbs-list">
+        <li><a href="index.html"><img src="img/icon-home.png" width="14" height="12" alt="Главная страница"></a></li>
         <li><img src="img/icon-right-small.svg" width="8" height="12" alt="Стрелка вправо"><a href="blank.html">Каталог</a></li>
         <li><img src="img/icon-right-small.svg" width="8" height="12" alt="Стрелка вправо"><a href="blank.html">Инструмент</a></li>
         <li><img src="img/icon-right-small.svg" width="8" height="12" alt="Стрелка вправо"><a href="blank.html">Перфораторы</a></li>
@@ -74,6 +74,7 @@
 
     <section class="catalog-list">
       <h3>Перфораторы</h3>
+      <div class="wrap-filter-catalog-sort">
       <h4>Фильтр:</h4>
       <div class="catalog-sort">
         <h4>Сортировка:</h4>
@@ -88,7 +89,7 @@
           <li class="sort-down"><a href="#"><img src="img/icon-down.svg" width="11" height="10" alt="Сортировка по убыванию"></a></li>
           <li class="sort-up"><a href="#"><img src="img/icon-up-grey.svg" width="11" height="10" alt="Сортировка по убыванию"></a></li>
         </ul>
-      </div>
+      </div></div>
     </section>
 
     <div class="wrap-filter-catalog-products">
@@ -150,7 +151,7 @@
 
 
     <section class="products">
-      <h3 style="visibility: hidden; font-size: 12px;">Список товаров каталога</h3>
+      <h3 class="element-hidden">Список товаров каталога</h3>
       <ul class="products-list">
         <li class="product-item"><a href="#"><img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор">Перфоратор BOSCH-BFG
             9000</a><span>32500 Р.</span><button class="button-to-cart">25500 Р.</button></li>
@@ -174,12 +175,13 @@
 
 
           </ul>
+      <div class="wrap-pagination">
       <ul class="pagination">
         <li class="pagination-item-active">
           <a href="#">1</a>
         </li>
         <li class="pagination-item">
-          <a>2</a>
+          <a href="#">2</a>
         </li>
         <li class="pagination-item">
           <a href="#">3</a>
@@ -187,7 +189,7 @@
 
       </ul>
       <a href="#" class="pagination-item-next">Следующая</a>
-
+      </div>
 
     </section>
   </div>
