@@ -18,20 +18,20 @@
   <header class="main-header">
 
     <div class="wrap-top-navigation">
-      <a class="main-header-logo" title="Техномарт"><img src="img/logo-technomart.png" width="107" height="17" alt="Логотип Техномарта"></a>
-      <form action="get" name="search" class="search-form"><img src="img/icon-search.png" width="17" height="17" alt="Изображение лупы"><label class="search-input">Поиск: <input type="text" name="Поиск" id="input-search"></label></form>
+      <div class="main-header-logo"><a title="Техномарт"><img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта"></a></div>
+      <form action="get" name="search" class="search-form"><label>Поиск: <input type="text" name="Поиск" id="input-search"></label></form>
       <ul class="site-navigation-top">
-        <li class="button-bookmark"><div class="wrap-img-bookmark"><img src="img/icon-bookmark.png" width="17" height="17" alt="Иконка закладок"></div><a href="#">Закладки: 0</a></li>
-        <li class="button-cart"><div class="wrap-img-cart"><img src="img/icon-cart.png" width="17" height="17" alt="Иконка корзины"></div><a href="#">Корзина: 0</a></li>
+        <li class="button-bookmark"><a href="#">Закладки: 0</a></li>
+        <li class="button-cart"><a href="#">Корзина: 0</a></li>
         <li class="button-order"><a href="#">Оформить заказ</a></li>
       </ul>
     </div>
     <div class="wrap-middle-header">
       <h1>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
-      <div class="telephone"><a href="tel:+78005558628"><img src="img/icon-phone.png" width="19" height="19" alt="Изображение телефона">&nbsp;+7 800 555-86-28</a><br><p class="adress-top">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p></div>
+      <div class="telephone"><a href="tel:+78005558628">+7 800 555-86-28</a><br><p class="adress-top">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p></div>
       <ul class="autorisation">
-        <li class="button-login"><a href="blank.html"><div>Войти</div></a></li>
-        <li class="button-autorisation"><a href="blank.html"><div>Регистрация</div></a></li>
+        <li class="button-login"><a href="blank.html">Войти</a></li>
+        <li class="button-autorisation"><a href="blank.html">Регистрация</a></li>
       </ul>
     </div>
 
@@ -54,6 +54,41 @@
   <main class="container">
     <section class="features">
 
+      <div class="features-left-column">
+        <div class="feature-item materials">
+          <h2>Материалы</h2><a href="blank.html" class="button-featured">На любой вкус</a>
+        </div>
+        <div class="feature-item tools">
+          <h2>Инструмент</h2><a href="blank.html" class="button-featured">На все случаи</a>
+        </div>
+
+        <ul class="slider">
+          <li class="slide-1 element-hidden"><span class="large">Перфораторы</span><p>Настоящие мужские игрушки</p><div class="wrap-button-next-pre"><button class="button-pre"></button><button class="button-next"></button></div><button class="button open-catalog">Открыть каталог</button></li>
+          <li class="slide-2"><span class="large">Дрели</span><p>Соседям на радость</p><div class="wrap-button-next-pre"><button class="button-pre"></button><button class="button-next"></button></div><button class="button open-catalog">Открыть каталог</button></li>
+          <div class="wrap-points-slide"><button class="point-slide"></button><button class="point-slide-active"></button></div>
+
+
+
+        </ul>
+
+      </div>
+
+      <div class="features-right-column">
+        <div class="feature-item technics">
+          <h2>Техника</h2><a href="blank.html" class="button-featured">Для стройки</a>
+        </div>
+        <div class="feature-item action">
+          <h2>Скидки 50%</h2><a href="blank.html" class="button-featured">На 350 товаров</a>
+        </div>
+        <div class="feature-item delivery">
+          <h2>Доставка</h2><a href="blank.html" class="button-featured">Бесплатно</a>
+        </div>
+      </div>
+
+    </section>
+<!--
+    <section class="features">
+
       <ul class="features-list">
         <li class="feature-item materials">
           <h2>Материалы</h2><a href="blank.html" class="button-featured">На любой вкус</a>
@@ -72,10 +107,10 @@
         </li>
         <li class="feature-item slider">
       <div id="slider" class="slider"><span class="large">Перфораторы</span><p>Настоящие мужские игрушки</p></div>
-      </li><!-- Вроде как слайдер нельзя помещать в список, т.к. он другого типа??? Но иначе его в грид-сетку не засунуть!-->
+      </li>
       </ul>
 
-    </section>
+    </section>-->
 
     <section class="top-products">
 
@@ -121,7 +156,8 @@
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Кредит</a></li>
         </ul>
-        <img src="img/shadow-services.png" width="10" height="279" alt="Разделитель">
+        <div class="shadow-services"></div>
+        <!--<img src="img/shadow-services.png" width="10" height="279" alt="Разделитель">-->
         <div class="slider-services-slide">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо
@@ -163,8 +199,8 @@
     </section>
     </div>
 
-    <section class="modal-window" style="display: none;">
-      <h2>Форма обратной связи</h2>
+    <section class="modal-window element-hidden">
+      <h2 class="element-hidden">Форма обратной связи</h2>
 
       <form action="https://echo.htmlacademy.ru" method="post" class="form-feedback">
         <p>
@@ -177,10 +213,10 @@
         </p>
         <p class="yourmessage">
           <label for="yourmessage">Текст письма</label>
-          <textarea rows="10" cols="59" id="yourmessage" name="yourmessage"> В свободной форме"</textarea>
+          <textarea id="yourmessage" name="yourmessage">В свободной форме</textarea>
         </p>
-
-        <button type="submit" class="button button-modal">Отправить</button>
+        <div class="modal-gray">
+        <button type="submit" class="button button-modal">Отправить</button></div>
       </form>
       <button type="button" class="button-close"></button>
     </section>
