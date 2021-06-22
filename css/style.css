@@ -35,21 +35,21 @@
        url("../fonts/cuprumitalic.woff") format("woff");
 }
 @font-face {
-  font-family: "PTSans";
+  font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
-  src: local("PTSans"),
-       url("../fonts/ptsans.woff2") format("woff2"),
-       url("../fonts/ptsans.woff") format("woff");
+  src: local("PT Sans"),
+       url("../fonts/PT Sans.woff2") format("woff2"),
+       url("../fonts/PT Sans.woff") format("woff");
 }
 
 @font-face {
-  font-family: "PTSansBold";
+  font-family: "PT SansBold";
   font-weight: 700;
   font-style: normal;
-  src: local("PTSansBold"),
-       url("../fonts/ptsansbold.woff2") format("woff2"),
-       url("../fonts/ptsansbold.woff") format("woff");
+  src: local("PT SansBold"),
+       url("../fonts/PT Sansbold.woff2") format("woff2"),
+       url("../fonts/PT Sansbold.woff") format("woff");
 }
 */
 :root {
@@ -81,7 +81,7 @@
 }
 
 body {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 
@@ -96,7 +96,7 @@ li {
 
 .page-body {
   background-color: var(--basic-white);
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -112,7 +112,7 @@ li {
 }
 
 h1 {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -122,7 +122,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -132,7 +132,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -143,7 +143,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -154,7 +154,7 @@ h4 {
 }
 
 .button {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -245,7 +245,7 @@ h4 {
   margin: 9px 4px 0 17px;
   position: relative;
   padding-left: 20px;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -534,7 +534,7 @@ h4 {
   height: 45px;
   padding: 0;
   margin: 0;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   color: black;
   font-weight: 400;
   font-size: 21px;
@@ -550,7 +550,7 @@ h4 {
 }
 
 .button-login a, .button-username a {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -564,7 +564,7 @@ h4 {
 }
 
 .button-autorisation a {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -609,7 +609,7 @@ h4 {
   position: absolute;
   width: 150px;
   height: 45px;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   margin-left: 10px;
   font-weight: 400;
   font-size: 21px;
@@ -650,7 +650,7 @@ h4 {
 
   width: 290px;
   height: 45px;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
 
   font-weight: 400;
   font-size: 21px;
@@ -727,7 +727,7 @@ li.profile {
 
 
 .my-orders a, .profile a {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -940,7 +940,7 @@ div.feature-item:last-child {
   margin-left: 23px;
   margin-top: 18px;
 
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -984,7 +984,7 @@ ul.slider {
 
 .large {
 
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   display: block;
   font-weight: 700;
   font-size: 36px;
@@ -1181,7 +1181,7 @@ ul.slider {
   padding: 10px;
   margin-left: 23px;
   margin-top: 64px;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1214,7 +1214,7 @@ ul.slider {
 .large {
 
   display: block;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
 
   font-weight: 700;
   font-size: 36px;
@@ -1286,8 +1286,8 @@ ul.slider {
   border: solid 1px var(--special-border);
   background-color: var(--basic-white);
   text-align: center;
-  padding: 20px 0 20px 0;
-  margin: 20px 0 20px 0;
+  padding: 0px 0 20px 0;
+  margin: 0 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1299,7 +1299,7 @@ ul.slider {
 
 }
 
-.product-item a {
+.top-list-products .product-item a {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1313,20 +1313,52 @@ ul.slider {
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0 0 10px 0;
 
 }
 
-.product-item img {
-  margin: 10px auto 40px auto;
-  align-self: center;
-
+.top-list-products .product-item img {
+  margin-bottom: 10px;
 }
 
-.product-item div.new {
+.top-list-products .product-item span {
+  margin: 0 0 10px 0;
+}
+
+.top-list-products .product-item div.new {
   position: absolute;
   display: block;
-  margin: -30px 0 0 148px;
+  left: 145px;
+  top: 0px;
+
   z-index: 1000;
+
+}
+
+.button-to-cart {
+  position: relative;
+  display: block;
+  width: 141px;
+  height: 38px;
+  background-color: var(--basic-red);
+
+  border-radius: 4px;
+  border-style: none;
+  background-image: url("../img/corners.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  color: var(--basic-white);
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 12px;
+  margin: 0 auto;
+
+
+  align-self: flex-end;
+  box-sizing: border-box;
 
 }
 
@@ -1464,7 +1496,7 @@ ul.slider {
   height: 61px;
 
 
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
 
   font-weight: 700;
   font-size: 21px;
@@ -1510,7 +1542,7 @@ ul.slider {
 
 .about-company p {
   color: black;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
 
   font-weight: 400;
   font-size: 13px;
@@ -1525,7 +1557,7 @@ ul.slider {
 }
 .transports-list .transport-item {
   color: black;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
 
   font-weight: 400;
   font-size: 18px;
@@ -1550,7 +1582,7 @@ ul.slider {
 
 .contacts p {
   color: black;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
 
   font-weight: 400;
   font-size: 13px;
@@ -1575,7 +1607,7 @@ bottom: 0;
 margin: auto;
 display: flex;
 
-font-family: "Cuprum", "PTSans", sans-serif;
+font-family: "Cuprum", "PT Sans", sans-serif;
 
 font-weight: normal;
 font-size: 18px;
@@ -1815,7 +1847,7 @@ text-transform: uppercase;
   color: black;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PTSans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   margin-left: 0;
@@ -1830,7 +1862,7 @@ text-transform: uppercase;
 
   color: black;
   padding: 10px 0 10px 20px;
-  font-family: "PTSans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
 
@@ -1852,7 +1884,7 @@ text-transform: uppercase;
 li.catalog-sort-item a {
 font-size: 13px;
   line-height: 18px;
-  font-family: "PTSans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
 
@@ -1870,7 +1902,7 @@ font-size: 13px;
   box-sizing: border-box;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PTSans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   margin-top: 0;
@@ -1910,7 +1942,7 @@ font-size: 13px;
 
 .form-filter legend {
   color: black;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -1980,7 +2012,7 @@ background: #00ca74;
 
 .price-range label {
 text-transform: uppercase;
-font-family: "PTSans", sans-serif;
+font-family: "PT Sans", sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 17px;
@@ -2035,7 +2067,7 @@ line-height: 18px;
 
 .filter-manufacturer-item label {
   color: black;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -2050,7 +2082,7 @@ line-height: 18px;
 
 .filter-power-item label {
   color: black;
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -2127,7 +2159,7 @@ line-height: 18px;
 }
 
 .products .products-list {
-
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2163,6 +2195,8 @@ line-height: 18px;
 
 }
 
+
+
 .products-list .product-item .hovered {
 
 
@@ -2175,58 +2209,70 @@ line-height: 18px;
 
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   text-align: center;
-  padding: 10px 0 10px 0;
+
   left: -1px;
   top: -1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+
 
   box-sizing: border-box;
 
-}
-
-.hovered a {
-  position: relative;
-  display: block;
-  padding: 0;
-  margin: 0;
-
-
-
-
-
-
+  z-index: 100000;
 
 }
 
-.hovered span {
-  position: relative;
-  display: block;
-  padding: 0;
-  margin: 0;
+.products-list .product-item .main-body {
 
 
+  position: absolute;
+  width: 218px;
+  min-height: 318px;
+  height: 100%;
+  border: solid 1px var(--special-border);
+  background-color: var(--basic-white);
 
 
+  text-align: center;
 
+  left: -1px;
+  top: -1px;
+
+
+  box-sizing: border-box;
+
+  z-index: 0;
 
 }
 
 
 
 .products-list .product-item .main-body:hover {
-  opacity: 0;
-}
 
-.products-list .product-item div.show{
-  opacity: 0;
-}
-
-.products-list .product-item div.show:hover {
   opacity: 1;
 }
+
+.products-list .product-item .show {
+
+  opacity: 0;
+
+}
+
+.products-list .product-item .show:hover {
+
+  opacity: 1;
+
+}
+
+.products-list .product-item div.new {
+  position: absolute;
+  display: block;
+  left: 145px;
+  top: 0px;
+
+  z-index: 1000;
+
+}
+
+
 
 .button-to-order {
 
@@ -2242,13 +2288,14 @@ line-height: 18px;
 
   border-style: none;
   background-color: var(--basic-green);
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
 
-  padding-top: 0px;
+  padding-top: 2px;
+  padding-left: 20px;
 
   box-sizing: border-box;
   cursor: pointer;
@@ -2267,7 +2314,7 @@ line-height: 18px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  left: 30px;
+  left: 35px;
   top: 10px;
   opacity: 0.5;
 
@@ -2276,33 +2323,39 @@ line-height: 18px;
 
 .wrap-buttons-order-bookmarks-img {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  width: 200px;
-  height: 150px;
-  margin: 0 auto;
-  border: #ca0097 solid 1px;
-  margin-bottom: 0;
-  padding: 10px;
-  box-sizing: border-box;
-
-}
-
-.container-img {
-  position: relative;
   display: block;
   width: 200px;
   height: 150px;
   margin: 0 auto;
-  border: #ca0097 solid 1px;
-  margin-bottom: 0;
-  object-fit: contain;
+
+  padding-top: 30px;
+
+
+
   box-sizing: border-box;
+  margin-top: 10px;
 
 }
+
+.container-img {
+
+  display: block;
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+
+
+  object-fit: contain;
+
+  box-sizing: border-box;
+
+  margin-top: 10px;
+  padding: 0;
+
+
+
+}
+
 
 
 
@@ -2323,6 +2376,18 @@ line-height: 18px;
 
 }
 
+.product-item a {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+
+  color: black;
+  display: block;
+  margin: 10px 0 10px 0;
+}
+
 .product-item span {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -2332,7 +2397,7 @@ line-height: 18px;
   text-transform: uppercase;
   color: #a9a9a9;
   display: inline-block;
-  margin: 10px 0 10px 0;
+  margin: 0 0 20px 0;
 }
 
 .main-body .button-to-cart, .hovered .button-to-cart {
@@ -2492,7 +2557,7 @@ line-height: 18px;
 }
 
 .footer-address, .footer-address a {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
 
   font-weight: 400;
   font-size: 18px;
@@ -2565,7 +2630,7 @@ line-height: 18px;
   opacity: 50%;
 }
 .copyright {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
 
   font-weight: 400;
   font-size: 16px;
@@ -2610,7 +2675,7 @@ line-height: 18px;
 }
 
 .appendix-list li {
-  font-family: "Cuprum", "PTSans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   align-self: center;
   font-weight: 400;
   font-size: 16px;
