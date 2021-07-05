@@ -1,57 +1,3 @@
-/*
-@font-face {
-  font-family: "Cuprum";
-  font-weight: 400;
-  font-style: normal;
-  src: local("Cuprum"),
-       url("fonts/cuprum.woff2") format("woff2"),
-       url("fonts/cuprum.woff") format("woff");
-}
-
-@font-face {
-  font-family: "CuprumBold";
-  font-weight: 700;
-  font-style: normal;
-  src: local("CuprumBold"),
-       url("../fonts/cuprumbold.woff2") format("woff2"),
-       url("../fonts/cuprumbold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "CuprumBoldItalic";
-  font-weight: 700;
-  font-style: italic;
-  src: local("CuprumBoldItalic"),
-       url("../fonts/cuprumbolditalic.woff2") format("woff2"),
-       url("../fonts/cuprumbolditalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "CuprumItalic";
-  font-weight: 700;
-  font-style: italic;
-  src: local("CuprumItalic"),
-       url("../fonts/cuprumitalic.woff2") format("woff2"),
-       url("../fonts/cuprumitalic.woff") format("woff");
-}
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-style: normal;
-  src: local("PT Sans"),
-       url("../fonts/PT Sans.woff2") format("woff2"),
-       url("../fonts/PT Sans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PT SansBold";
-  font-weight: 700;
-  font-style: normal;
-  src: local("PT SansBold"),
-       url("../fonts/PT Sansbold.woff2") format("woff2"),
-       url("../fonts/PT Sansbold.woff") format("woff");
-}
-*/
 :root {
   --basic-top: #293449;
   --basic-navy: #32425C;
@@ -181,6 +127,18 @@ h4 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .main-header {
@@ -1088,7 +1046,7 @@ ul.slider {
 }
 
 .slide-1 {
-  background: url("../img/Layer 99-2.jpg") 0 0 no-repeat;
+  background: url("../img/layer99-2.jpg") 0 0 no-repeat;
   width: 620px;
   min-height: 266px;
   padding: 23px 24px 0 24px;
@@ -1098,7 +1056,7 @@ ul.slider {
 }
 
 .slide-2 {
-  background: url("../img/Layer 99.jpg") 0 0 no-repeat;
+  background: url("../img/layer99.jpg") 0 0 no-repeat;
   width: 620px;
   min-height: 266px;
   padding: 23px 24px 0 24px;
@@ -1182,6 +1140,10 @@ ul.slider {
   cursor: pointer;
 }
 
+.open-catalog a {
+  color: var(--basic-white);
+}
+
 .open-catalog:hover {
   background-color: rgba(202, 44, 55, 1);
 }
@@ -1192,38 +1154,45 @@ ul.slider {
 
 
 .wrap-points-slide {
-  width: 28px;
+  width: 30px;
   min-height: 14px;
 
   position: absolute;
   display: flex;
   justify-content: space-between;
-  align-content: flex-start;
+  align-content: center;
   align-items: center;
   flex-wrap: nowrap;
 
-  top: 220px;
+  top: 213px;
   left: 295px;
 
+
 }
 
-.point-slide {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: block;
-  background-color: var(--basic-white);
+
+
+
+
+svg.point-slide {
+  stroke: white;
+  fill: white;
+  stroke-width: 2px;
   border: none;
   cursor: pointer;
+  border-style: none;
 }
 
-.point-slide-active {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: block;
-  background-color: var(--basic-red);
-  border: solid 2px white;
+svg.point-slide-active {
+
+  border: none;
+  cursor: pointer;
+  border-style: none;
+
+  stroke: white;
+  fill: red;
+  stroke-width: 2px;
+
 
 
 }
@@ -2142,7 +2111,7 @@ text-transform: uppercase;
 .wrap-filter-catalog-sort {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin: 0;
   padding: 0;
 
 }
@@ -2311,10 +2280,11 @@ li.catalog-sort-item a:last-of-type {
   justify-content: space-between;
   align-content: flex-start;
   margin-top: 0;
+}
 
-
-
-
+.filter-catalog {
+  padding: 0;
+  margin: 0;
 }
 
 .form-filter {
@@ -2324,7 +2294,7 @@ li.catalog-sort-item a:last-of-type {
 
 }
 
-.form-filter legend {
+.filter-cost legend {
   color: black;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -2332,8 +2302,9 @@ li.catalog-sort-item a:last-of-type {
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 11px;
-  margin-top: -14px;
+  margin-bottom: 8px;
+  display: block;
+
 
 }
 
@@ -2391,9 +2362,15 @@ background: #00ca74;
 
 
 .price-range {
-  display: flex;
-  justify-content: space-between;
+
   margin-top: 9px;
+  box-sizing: border-box;
+  flex-shrink: 1;
+  width: 220px;
+  position: relative;
+  margin-bottom: 50px;
+
+
 }
 
 .price-range label {
@@ -2403,29 +2380,80 @@ font-style: normal;
 font-weight: normal;
 font-size: 17px;
 line-height: 18px;
+margin: 0;
+padding: 0;
+
 }
 
-.price-range input {
+.price-range input.min-price {
 
 
   padding: 0px;
-  margin-left: 0px;
+  margin: 0;
   text-align: center;
   color: #283136;
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background-color: var(--basic-filter);
   font-family: inherit;
   font-size: inherit;
   box-sizing: border-box;
   padding-bottom: 3px;
+
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  display: block;
+  position: absolute;
+  width: 95px;
+
+
 }
 
+.price-range input.max-price {
+
+
+  padding: 0px;
+  margin: 0;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--basic-filter);
+  font-family: inherit;
+  font-size: inherit;
+  box-sizing: border-box;
+  padding-bottom: 3px;
+
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  display: block;
+  position: absolute;
+  width: 95px;
+  left: 125px;
+  top: 0px;
+
+
+}
+
+
 .defis {
-  width: 10px;
+  width: 12px;
   height: 2px;
   background-color: black;
-  margin: 20px 5px;
+  margin: 20px 2px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 102px;
+
+
 }
 
 .form-filter div.line {
@@ -2434,7 +2462,8 @@ line-height: 18px;
   text-align: center;
   background-color: var(--basic-grey);
   height: 1px;
-  margin-top: 20px;
+  margin-top: 22px;
+  margin-bottom: 16px;
 }
 
 .filter-cost input {
@@ -2446,6 +2475,8 @@ line-height: 18px;
   border-radius: 4px;
 
 
+
+
 }
 
 .cost-range .scale {
@@ -2454,8 +2485,16 @@ line-height: 18px;
 }
 
 .filter-manufacturer legend, .filter-power legend {
-  margin-top: 15px;
+
+
   display: block;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
 
 }
 
@@ -2463,7 +2502,7 @@ ul.filter-manufacturer-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin: 5px 0 -8px 35px;
+  margin: 13px 0 -8px 35px;
 
 }
 
@@ -2491,7 +2530,7 @@ ul.filter-power-list {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin: 8px 0 -8px 35px;
+  margin: 20px 0 0 35px;
 }
 
 .filter-power-item {
@@ -2609,7 +2648,7 @@ ul.filter-power-list {
   background-color: var(--basic-white);
   border: solid 1px var(--basic-grey);
   width: 220px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-top: 9px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -2618,6 +2657,9 @@ ul.filter-power-list {
   line-height: 18px;
   text-transform: uppercase;
 }
+
+
+/*===================== СПИСОК ПРОДУКТОВ =====================*/
 
 .products {
 
@@ -2633,6 +2675,7 @@ ul.filter-power-list {
   justify-content: space-between;
   align-content: flex-end;
   flex-wrap: wrap;
+  margin-top: 12px;
 
 
 }

@@ -7,7 +7,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
@@ -19,7 +19,7 @@
 
     <div class="wrap-top-navigation">
       <div class="main-header-logo"><a title="Техномарт"><img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта"></a></div>
-      <form action="get" name="search" class="search-form" id="search-form" action="https://echo.htmlacademy.ru"><label>Поиск: <input type="text" name="Поиск" id="input-search"></label></form>
+      <form name="search" class="search-form" id="search-form" action="https://echo.htmlacademy.ru"><label>Поиск: <input type="text" name="Поиск" id="input-search"></label></form>
       <ul class="site-navigation-top">
         <li class="button-bookmark"><a href="#">Закладки: 0</a></li>
         <li class="button-cart"><a href="#">Корзина: 0</a></li>
@@ -63,11 +63,15 @@
         </div>
         <div class="wrap-slider">
         <ul class="slider">
-          <li class="slide-1" style="display: none;"><span class="large">Перфораторы</span><p>Настоящие мужские игрушки</p><div class="wrap-button-next-pre"><button class="button-pre"></button><button class="button-next"></button></div><button class="button open-catalog">Открыть каталог</button></li>
-          <li class="slide-2"><span class="large">Дрели</span><p>Соседям на радость</p><div class="wrap-button-next-pre"><button class="button-pre"></button><button class="button-next"></button></div><button class="button open-catalog">Открыть каталог</button></li>
+          <li class="slide-1" style="display: none;"><span class="large">Перфораторы</span><p>Настоящие мужские игрушки</p><div class="wrap-button-next-pre"><button class="button-pre"></button><button class="button-next"></button></div><button class="button open-catalog"><a href="catalog.html">Открыть каталог</a></button></li>
+          <li class="slide-2"><span class="large">Дрели</span><p>Соседям на радость</p><div class="wrap-button-next-pre"><button class="button-pre"></button><button class="button-next"></button></div><button class="button open-catalog"><a href="catalog.html">Открыть каталог</button></li></a></button></li>
 
         </ul>
-        <div class="wrap-points-slide"><button class="point-slide"></button><button class="point-slide-active"></button></div>
+        <div class="wrap-points-slide"><a href="#"><svg class="point-slide" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle r="4px" cx="5px" cy="5px" />
+          </svg></a><a href="#"><svg class="point-slide-active" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle r="4px" cx="5px" cy="5px" />
+            </svg></a></div>
       </div>
 
       </div>
@@ -176,13 +180,15 @@
       <div class="wrap-section-header"><h3>Популярные производители:</h3><a href="blank.html" class="button" tabindex="0">Все производители</a></div>
       <ul class="manufacturers-list">
         <li class="manufacturer-item"><a href="#"><img src="img/logo-bosch.png" width="220" height="145" alt="Логотип Bosch"></a></li>
+        <li class="manufacturer-item"><a href="#"><img src="img/logo-makita.png" width="220" height="145" alt="Логотип Makita"></a></li>
         <li class="manufacturer-item"><a href="#"><img src="img/logo-dewalt.png" width="220" height="145" alt="Логотип Dewalt"></a></li>
         <li class="manufacturer-item"><a href="#"><img src="img/logo-interscol.png" width="220" height="145" alt="Логотип Интерскол"></a></li>
-        <li class="manufacturer-item"><a href="#"><img src="img/logo-lg.png" width="220" height="145" alt="Логотип LG"></a></li>
-        <li class="manufacturer-item"><a href="#"><img src="img/logo-makita.png" width="220" height="145" alt="Логотип Makita"></a></li>
-        <li class="manufacturer-item"><a href="#"><img src="img/logo-metabo.png" width="220" height="145" alt="Логотип Metabo"></a></li>
-        <li class="manufacturer-item"><a href="#"><img src="img/logo_aeg.png" width="220" height="145" alt="Логотип AEG"></a></li>
         <li class="manufacturer-item"><a href="#"><img src="img/logo-hitachi.png" width="220" height="145" alt="Логотип Hitachi"></a></li>
+        <li class="manufacturer-item"><a href="#"><img src="img/logo-lg.png" width="220" height="145" alt="Логотип LG"></a></li>
+        <li class="manufacturer-item"><a href="#"><img src="img/logo_aeg.png" width="220" height="145" alt="Логотип AEG"></a></li>
+        <li class="manufacturer-item"><a href="#"><img src="img/logo-metabo.png" width="220" height="145" alt="Логотип Metabo"></a></li>
+
+
 
 
       </ul>
@@ -196,13 +202,13 @@
 
       <div id="slider-services-nav" class="slider-services-nav">
         <ul>
-          <li><a href="#">Доставка</a></li>
+          <li class="li-active"><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
-          <li class="li-active"><a href="#">Кредит</a></li>
+          <li><a href="#">Кредит</a></li>
         </ul>
         <div class="shadow-services"></div>
 
-        <div class="slider-services-slide-1 element-hidden">
+        <div class="slider-services-slide-1">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно!<br>
@@ -213,7 +219,7 @@
           <h3>Гарантия</h3>
           <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
         </div>
-        <div class="slider-services-slide-3">
+        <div class="slider-services-slide-3 element-hidden">
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
           <a href="blank.html" class="button credit">Отправить заявку</a>
@@ -303,7 +309,7 @@
     <ul class="appendix-list">
       <li class="item">Обратная связь: <br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
 
-      <li class="item">Разработано — <br><a href="https://htmlacademy.ru">htmlacademy.ru</a></li>
+      <li class="item">Разработано — <br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
 
 
     </ul>
